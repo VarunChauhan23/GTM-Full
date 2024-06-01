@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.careercontainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.careerdetails {
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  .careerdetails h2{
+    font-size: 30px;
+  }
+  
+  .details {
+    margin-top: 20px;
+  }
+  
+  .overview,
+  .responsibilities,
+  .requirements {
+    margin-top: 20px;
+  }
+  
+  .responsibilities ul,
+  .requirements ul {
+    padding-left: 20px;
+  }
+
+  .apply{
+   margin-top: 50px; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .career-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .apply{
+      margin-right: 5px;
+    }
+  }

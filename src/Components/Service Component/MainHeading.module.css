@@ -1,0 +1,40 @@
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.empty-lines {
+    background: black;
+    font: bold;
+    margin: auto;
+    width: 40vw;
+    height: 4px;
+}
+
+.heading {
+    color: black;
+    font: bold;
+    margin: auto;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+@media (max-width: 640px) {
+    .heading-container {
+        margin-left: 4px;
+        margin-bottom: 10px;
+    }
+
+    .empty-lines {
+        width: 35vw;
+        height: 4px;
+        margin: auto;
+    }
+
+    .heading {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}

@@ -1,0 +1,30 @@
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.button {
+    text-transform: none;
+    color: #F13E1E;
+    border-color: #F13E1E;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, transparent 50%, #F13E1E 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    color: white;
+    transition: background-position 1s ease;
+}
+
+@media (max-width: 640px) {
+    .button-container {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+
+.servicesheading {
+    text-align: center;
+    position: relative; 
+    margin: 10px auto; 
+  }
+  
+  
+  .headingtext{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #333333;
+  }
+ 
+  
+  
+  .servicesheading::before,
+  .servicesheading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  
+    height: 4px;  
+    width: 36%;  
+    background-color: #000; 
+    border-radius: 5px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  
+  .servicesheading::before {
+    left: 0;
+  }
+  
+  .servicesheading::after {
+    right: 0;
+  }
+  
+.servicescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servicecard {
+    width: 95%;
+    margin: 20px auto; 
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.serviceimage {
+    flex: 1;
+}
+
+.serviceimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.servicedetails {
+    flex: 2;
+    padding: 20px;
+}
+
+.servicedetails h3 {
+    margin-top: 0;
+}
+
+.servicedetails p {
+    margin: 10px 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .servicecard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviceimage{
+        flex: auto;
+        width: 100%;
+    }
+
+    .servicedetails {
+      width: 90%;
+    }
+}

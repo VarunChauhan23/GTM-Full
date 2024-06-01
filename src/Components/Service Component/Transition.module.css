@@ -1,0 +1,13 @@
+.transition-text {
+    font-size: 32px;
+    line-height: 32px;
+    background: gradient(#FDB322, #0D99FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@media (max-width: 640px) {
+    .transition-text {
+        font-size: 22px;
+    }
+}
